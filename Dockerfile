@@ -13,6 +13,7 @@ RUN apt-get install -y python3.6-dev
 RUN apt-get install -y python3.6-venv
 #为3.6安装pip
 RUN wget https://bootstrap.pypa.io/get-pip.py
+RUN apt-get install python3-distutils
 RUN python3.6 get-pip.py
 #print()时在控制台正常显示中文
 ENV PYTHONIOENCODING=utf-8
